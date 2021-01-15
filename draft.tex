@@ -72,15 +72,14 @@
 % "\documentclass[chi_draft]{sigchi}". You can then place todo notes
 % by using the "\todo{...}"  command. Make sure to disable the draft
 % option again before submitting your final document.
-\usepackage{todonotes}
+% \usepackage{todonotes}
 
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review
 % so you remain anonymous.
 \def\plaintitle{Lifestyle and study equipment changes during distance learning}
-\def\plainauthor{First Author, Second Author, Third Author,
-  Fourth Author, Fifth Author, Sixth Author}
-\def\emptyauthor{}
+\def\plainauthor{First Author, Second Author, Third Author, Fourth Author}
+\def\emptyauthor{First Author, Second Author, Third Author, Fourth Author}
 \def\plainkeywords{distance learning; student; home office; study environment; work environment; motivation; pandemic; health; }
 \def\plaingeneralterms{Documentation, Standardization}
 
@@ -108,7 +107,7 @@
 % fighting chance of not being over-written, since its job is to
 % redefine many LaTeX commands.
 \definecolor{linkColor}{RGB}{6,125,233}
-\hypersetup{%
+\hypersetup{
   pdftitle={\plaintitle},
 % Use \plainauthor for final version.
 %  pdfauthor={\plainauthor},
@@ -137,28 +136,31 @@
   \alignauthor{Author One\\
     \affaddr{for Submission}\\
     \affaddr{}\\
-    \email{}}\\
+    \email{}
+    }\\
   \alignauthor{Author Two\\
     \affaddr{for Submission}\\
     \affaddr{}\\
-    \email{}}\\
+    \email{}
+    }\\
   \alignauthor{Author Three\\
     \affaddr{for Submission}\\
     \affaddr{}\\
-    \email{}}\\
+    \email{}
+    }\\
   \alignauthor{Author Four\\
     \affaddr{for Submission}\\
     \affaddr{}\\
-    \email{}}\\
+    \email{}
+    }
 }
 \maketitle
+
 \begin{abstract}
-Given the appearance of the new pathological risk incurred during the 2020 Covid-19 pandemic, most educational institutions, be them either lower or higher educational, have had to restrict their activity on-campus and promote a fully online pedagogical methodology in order to avoid the spread of the virus and protect the health of both students and teachers. By employing already existing software solutions to the likes of \emph{Zoom}, \emph{Microsoft Teams}, and other existing tools, courses have been completely moved within the realm of the internet to the best of the ability of each educational institution. In this context, the authors are trying to investigate the effects that the sudden move to distance learning has had on students from different backgrounds, as well as how they have been forced to change their study and work environment to cope with the perpetual stress of academic life within the confines of their own home.
+Given the appearance of the new pathological risk incurred during the 2020 COVID-19 pandemic, most educational institutions, be them either lower or higher educational, have had to restrict their activity on-campus and promote a fully online pedagogical methodology in order to avoid the spread of the virus and protect the health of both students and teachers. By employing already existing software solutions to the likes of \emph{Zoom}, \emph{Microsoft Teams}, and other existing tools, courses have been completely moved within the realm of the internet to the best of the ability of each educational institution. In this context, the authors are trying to investigate the effects that the sudden move to distance learning has had on students from different backgrounds, as well as how they have been forced to change their study and work environment to cope with the perpetual stress of academic life within the confines of their own home.
 \end{abstract}
 
-
 % ACM Classfication
-
 \begin{CCSXML}
 <ccs2012>
 <concept>
@@ -189,11 +191,9 @@ Given the appearance of the new pathological risk incurred during the 2020 Covid
 % Print the classification codes
 \printccsdesc
 
-
-
 \section{Introduction}
 
-At the start of 2020, most countries around the world have had to impose strict restriction upon public spaces and institution in order to combat the eventual spread of Covid-19 within their populations. One measure imposed upon the educational systems was to forbid as much as possible lectures and other educational activities within their campuses as to avoid unnecessary and possible life-threatening contact between members of the institutions. In order to continue with the already started semester, most if not all education institutions have put forward online procedures based on already existing infrastructure in order for courses to still take place. Students have suddenly found themselves studying full time from the comfort of their home, not needing to travel to the universities campuses anymore. During their own experiences as students within the Summer 2020 semester, the authors have notice certain trends within their own behaviour and that of fellow students related to the unpreparedness of their own home-study environment and the rising motivational issues, and so, decided to perform an inquiry under the course work for the User Research Methods PR at the Technical University of Vienna, in order to investigate if indeed there was a general unpreparedness across the student population for such a drastic move to distance learning, as well as, if there is such a notion as a \emph{perfect study environment}, and in the end, conclude with a small \emph{tips and tricks} handbook which other students might find helpful in order to increase their comfort and motivation for studying at home and eventually decrease the amount of stress cause by social isolation.\cite{fauci_lane_redfield_2020, hossain_mental_2020}
+At the start of 2020, most countries around the world have had to impose strict restriction upon public spaces and institution in order to combat the eventual spread of COVID-19 within their populations. One measure imposed upon the educational systems was to forbid as much as possible lectures and other educational activities within their campuses as to avoid unnecessary and possible life-threatening contact between members of the institutions. In order to continue with the already started semester, most if not all education institutions have put forward online procedures based on already existing infrastructure in order for courses to still take place. Students have suddenly found themselves studying full time from the comfort of their home, not needing to travel to the universities campuses anymore. During their own experiences as students within the Summer 2020 semester, the authors have notice certain trends within their own behaviour and that of fellow students related to the unpreparedness of their own home-study environment and the rising motivational issues, and so, decided to perform an inquiry under the course work for the User Research Methods PR at the Technical University of Vienna, in order to investigate if indeed there was a general unpreparedness across the student population for such a drastic move to distance learning, as well as, if there is such a notion as a \emph{perfect study environment}, and in the end, conclude with a small \emph{tips and tricks} handbook which other students might find helpful in order to increase their comfort and motivation for studying at home and eventually decrease the amount of stress cause by social isolation.\cite{fauci_lane_redfield_2020, hossain_mental_2020}
 
 
 \section{Related Work}
@@ -202,7 +202,7 @@ Here we should probably talk about the previous papers we read about distance le
 
 \section{Methods}
 
-\subsubsection{Research Questions}
+\subsection{Research Questions}
 
 
 \subsection{Methodologies}
@@ -210,34 +210,34 @@ In order to perform their research as best as possible, the authors have decided
 
 \subsubsection{Auto-ethnography}
 
-Before starting the auto-ethnography research, each researcher has been given an information sheet and consent form which had to be sign by the research-participant and one of the other researchers. The structure of the document has been agreed upon unanimously by the team as so to avoid any potential issues related to data privacy of the resulting documents from the auto-ethnographic research.
+Before starting the auto-ethnography research, each researcher has been given an information sheet and consent form which had to be sign by the research-participant\footnote{The researcher that takes to role as participant as well, within the methodology} and one of the other researchers. The structure of the document has been agreed upon unanimously by the team so as to avoid any potential issues related to data privacy of the resulting documents from the auto-ethnographic research.
 
-After signing the consent form, each researcher has had to conduct an inner-inquiry upon his or hers experience that resulted from the drastic change towards full-time studying from home, as well as making a comparison between their study/work environment and study workload between their previous semester (e.g. Winter 2019/2020) and the next restricted semesters (e.g. Summer 2020, Winter 2020/2021).
+After signing the consent form, each researcher has had to conduct an inner-inquiry upon his or hers experience that resulted from the drastic change towards full-time studying from home, as well as making a comparison between their study/work environment and study workload between their previous semester\footnote{Winter 2019/2020} and the next restricted semesters\footnote{Summer 2020 and Winter 2020/2021}.
 
-Upon finishing their report about their own experience, each researcher had to take a picture of their current study environment/s (see Figure~\ref{fig:figure1} as an example) and attach it to the report. Afterwards all reports where analysed by each researcher, and researcher-participant had to perform a presentation of their experience to all other researchers. Findings culminating in organizing the information using thematic analysis using Miro\footnote{\url{https://miro.com/}} and extracting possible interview questions for their findings. After having decided on the possible interview questions, sample semi-structured interview took place, having one of the researchers as a participant, and two others as interviewer and observer. Upon finishing the sample interview, the interview question had been filtered to only five central questions as so to provide a structure for the incoming participant interviews.
+Upon finishing their report about their own experience, each researcher had to take a picture of their current study environment (see Figure~\ref{fig:figure1} as an example) and attach it to the report. Afterwards all reports where analysed by each researcher and the  researcher-participant had to perform a presentation of their experience to all other researchers. Later on, the information was analysed using \emph{thematic analysis} within \emph{Miro}\footnote{\url{https://miro.com/}} so as to extract possible interview questions for later use. After having decided on the possible interview questions, a sample semi-structured interview took place, having one of the researchers as a participant, and two others as interviewer and observer. Upon finishing the sample interview, the interview questions had been filtered to only five central ones in order to be used as a guide for the incoming participant interviews.
 \begin{figure}
 \centering
-  \includegraphics[width=0.9\columnwidth]{figures/auto-e-picture}
+  \includegraphics[width=1\columnwidth]{figures/auto-e-picture}
   \caption{Sample picture from the Auto-Ethnographic method, showing the desk of one of the researchers}~\label{fig:figure1}
 \end{figure}
 
 \subsubsection{Semi-structured Interviews}
 The 5 interview questions
-Who were the participants (general information), where the interviews were taken, how we found the participants, age, academic status, consent management, tools, analysing the interview, miro idea board / extracting data THEMATIC ANALYSING 
+Who were the participants (general information), where the interviews were taken, how we found the participants, age, academic status, consent management, tools, analysing the interview, Miro idea board / extracting data THEMATIC ANALYSING 
 
 Some people did not know how the pandemic will evolve so they did not prepare for a long home learning situation, we asked them how the ideal setup will look like or if they know the next semesters  will be remotely what will they change.
 
 issues: Single interviewer, no observer., subjectivity issues due to the participants being friends
 
 \subsubsection{Photographic Ethnography}
-Using the photo analysis method, the researches wanted to discover the study setups of students engaged in distance learning. The method was chose to give a better overview of essential items used by students for improving the health and comfort during online studies, at home. The participants agreed on sending a photo of their environment before the semi-structured online interviews. Moreover, the researchers shared photos of their personal setups used for remote studies. Two consents were used in the research: one sent to the participants before the semi-structured online interview, and another, for the researchers themselves, before starting the auto-ethnography process. The processes of storing, analyzing, anonymizing and deletion of the participants and researchers photos were covered in the mentioned consents.
+Using the photo analysis method, the researches wanted to discover the study setups of students engaged in distance learning. The method was chosen in order to give a better overview of essential items used by students for improving their health and comfort during online studies, at home. The participants agreed on sending a photo of their environment before the semi-structured online interviews. Moreover, the researchers shared photos of their personal setups used for remote studies. Two consents were used in the research: one sent to the participants before the semi-structured online interview, and another, for the researchers themselves, before starting the auto-ethnography process. The processes of storing, analyzing, anonymizing and deletion of the participants and researchers photos were covered in the mentioned consents.
 
-As visual recording of the personal space …, not all the participants agreed to expose their working space. A number of X photos was collected in the photo analysis process. A visual difference between the state of the learning environment before and after switching to distance learning could not been made, as the photos received by the researchers were taken in the actual context of the pandemic. Only one participant sent photos of their old and their actual setup.  One participant sent a photo of their current setup, and two photos of setups that could serve as inspiration for their ideal setup. All photos received by the participants were used in the analyze process.
+As visual recording of the personal space can be consider as a breach of privacy, not all the participants agreed to expose their working space. A number of five + (how many Oscar got) photos was collected in the photo analysis process. A visual difference between the state of the learning environment before and after switching to distance learning could not been made, as the photos received by the researchers were taken in the actual context of the pandemic. Only one participant sent photos of their old and their actual setup.  One participant sent a photo of their current setup, and two photos of setups that could serve as inspiration for their ideal setup (see Figure~\ref{fig:figure2}). All photos received by the participants were used in the analyze process.
 
 \begin{figure}
 \centering
-  \includegraphics[width=0.9\columnwidth]{figures/perfect-setup}
-  \caption{A sample photo from the Photographic Ethnography method given by one of the participants, it is the desired "perfect study environment''}~\label{fig:figure1}
+  \includegraphics[width=1\columnwidth]{figures/perfect-setup}
+  \caption{A sample photo from the Photographic Ethnography method given by one of the participants, it is the desired "perfect study environment''}~\label{fig:figure2}
 \end{figure}
 
 \section{Findings}
@@ -248,7 +248,6 @@ Our findings from the interviews
 
 Our findings from the photos: Both participants and from the auto-ethnography 
 
-
 The analyze of the photos received from the participants and from the researchers involved in the study, showed unique, personalized study environments,  with a commune focus on ergonomics, efficiency and aesthetics. The result showed that the position of the working desk is usually located close to a direct source of natural light.  The importance of a natural source of light was mentioned by several participants during the semi-structured online interview process. Items such as: second screen, laptop, lamp, plants, notebooks were … 
 
 \section{Discussion}
@@ -257,6 +256,24 @@ Things to talk about:
 1.Universities could open libraries or study spaces. Even increase the amount of space post-pandemic, as an issue already existed
 2. Items that are we recommend to use for study and the uni should give discounts to
 3. 
+
+\subsection{Biases in participation}
+There was an obvious variation in the result we achieved. It is therefore feasible to discuss what the research results would have looked like if the number of participants had been higher, or if the participants had studied another educational discipline than engineering. All the participants were students at the Vienna University of Technology in Austria which is a delimitation. Anyway, we believe it was an decent variety of life situations among these participants and thus a representative research overview.
+
+To try to minimize biases in the thematic analysis, all of the participants were renamed to improve an transparent thematic coding. 
+
+However, we argue that unaware biases could still affect the participants behavior and our own interpretations because we knew these students before the research. 
+
+\subsection{Motivation}
+But regardless of the participants' background a trend of declining motivation emerged in the research, something we did not plan for. All participants referred several times during the interviews to arguments that they experienced a deteriorating level of motivation despite the fact that we did not ask any semi-structured question about motivation. Motivation can therefore be seen as a rising and hidden problem even if the student's home office equipment or home office studies worked out well. We want to attribute the deteriorating motivation to the prevailing pandemic that forces students to study from home and be isolated from the campus life. What the challenges could entail varied depending on the participants. Two participants clearly stated that they did not appreciate studying without their classmates. One student was missing the sunlight and feeling of freedom. Another student found it difficult to focus on the computer screen during eight hours, but had no big challenges studying remotely. We also saw a pattern that the participants' motivation was stronger in the first semester of the pandemic (2020S) compared with the second semester of the pandemic (2020W).
+
+We believe this can be addressed to the society’s first ignorance of the early pandemic and that people primarily thought the early virus situation would not last for long. We therefore claim that the students' motivation was slightly better during the first semester because they kept their spirits up. This allowed the students to complete their studies in a distance learning format during the first semester of the pandemic without being too negatively affected.
+
+\subsection{Equipment}
+This can also be seen as an argument as to why six out of eight participants acquired new technical equipment in the middle of the pandemic, when it was clearer distance learning would continue. Upgrading the home office was eventually considered a necessity now when the students realized that their home office would remain. The technical equipment that was most commonly bought among the participants were extra monitors, touchpads, printers, headphones and mouses. However, we argue that it is still difficult to generalize what type of technical equipment students need to add in their home office setup due to the fact that the setup differs from situations. It can be stated that none of the participants needed to buy a computer to be able to transform into the distance learning format. We believe that this is due to the fact that the university and university studies were already digitized to a large extent before the pandemic broke out. Consequently, as a student switching to full-distance learning was not too painful even though the motivation has been strongly negatively affected. As the technical equipment is central to distance learning, we believe that students in general have chosen to prioritize a decent set-up. We believe that many students prioritize buying the most relevant technical equipment at the beginning of their university education. However, we believe that most students have needed to update some of the technical equipment. Only one of nine participants had for example not bought any extra electrical equipment in 2020. A short conclusion is therefore that most home offices were not optimized for distance learning at the beginning of the pandemic and that many students have had to upgrade their equipment successively.
+
+\subsection{Ergonomics and comfort}
+Studying in the home office sets a new level of understanding ergonomics depending on the basic office equipment. We would like to point out that there was dissatisfaction with the participants' office chairs, which they considered to be unergonomic in many various aspects. The chair was described as stiff, offered a bad working posture and could not be adjusted in height. Hence, it was not an office chair but a normal chair. We therefore claim that there may be negative effects in the back, neck and shoulder if students do not choose to upgrade their chair in the future home office. Studying at the university offers better ergonomics with chairs, benches and lamps that are adapted for university studies. Consequently, five of the participants answered that they wanted to upgrade their chair if they could. Three of the participants also answered that they would prefer to have a separate office if they could, which is not possible without moving into a new living accommodation. We therefore believe that it is necessary for all students to reflect our their own situation and be flexible and creative in how they can improve their own home office. All students may need different solutions as situations always differ. We also believe that inappropriate routines that office equipment can generate are difficult to detect. It is easy to get used to equipment that works but is not optimal. We therefore urge all students to reflect about their home office standard and how it could be improved. We consider it is important to ask the question "what do I need to improve if I am going to study here for a year?". According to the research findings, all participants received some form of negative ergonomics aspect that affected the participants’ studies. Working light, fresh air or working posture were the some main problems. Even sitting still in one and the same room was considered as a problem. Improving the study area as early as possible, we claim will prevent discovered and undiscovered problems. We base this discussion on the fact that the participants had difficulty answering questions about their perfect study setup. We thus argue that the participants had not processed their own thoughts about whether they could improve their home office or not, which indicates that ergonomics have been prioritized away in the noise of distance studies and other undiscovered problems. This can, for example, be related to the general student's financial limitations. One of the participants also pointed out that his eyes ached in the evening, after hours in front of the computer. But this can be avoided with regular breaks or blue light-repellent glasses, which is also an indication that the student does not know how to improve their ergonomics. We believe that this is not because the student does not want to improve his health, but because the student don not prioritize the time of reflecting about the home office setup. We would therefore like to encourage all higher education institutions as well as students to investigate the research that today exists on how to improve ergonomics in the home office. 
 
 \subsection{Limitations}
 
@@ -280,7 +297,9 @@ Multiple participants have expressed an inner desired to talk about their motiva
 3. West country rich 
 4. Didn’t realize the length of the pandemic
 5. What could the regulations look like?
-6. Maybe (?) we have a OK demographic picture of the participants (students)
+6. Maybe (?) we have a OK demographic picture of the participants (students) \\
+
+
 
 
 
